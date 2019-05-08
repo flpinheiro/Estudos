@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .search-container {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .white, .white a {
+            color: #fff;
+        }
+
+        @media and (max-device-width: 992px) {
+            .oculta {
+                display: none;
+            }
+
+            .element {
+                @include hide;
+            }
+
+            .invisible {
+                visibility: hidden;
+            }
+        }
+
+        @media and (min-device-width: 992px) {
+            .oculta {
+            }
+        }
+    </style>
+</head>
+<body class="container">
+    <header class="row">
+        <nav class="navbar navbar-inverse col-xl">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <button type="button" class="navbar-toggle btn btn-lights">
+                        <a href="#"><i class="glyphicon glyphicon-shopping-cart white"></i></a>
+                    </button>
+                    <button type="button" class="navbar-toggle btn btn-lights">
+                        <a href="#"><i class="glyphicon glyphicon-user white"></i></a>
+                    </button>
+
+
+
+                    <a class="navbar-brand" href="#">WebSiteName</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <aside class="col-lg-3 ">
+            <div class="collapse navbar-collapse " id="myNavbar">
+                <ul class="nav flex-column">
+                    <li>
+                        <form action="#" class="search-container">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 2-1</a></li>
+                            <li><a href="#">Page 2-2</a></li>
+                            <li><a href="#">Page 2-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 3-1</a></li>
+                            <li><a href="#">Page 3-2</a></li>
+                            <li><a href="#">Page 3-3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Page 4-1</a></li>
+                            <li><a href="#">Page 4-2</a></li>
+                            <li><a href="#">Page 4-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Page 5</a></li>
+                    <li><a href="#">Page 6</a></li>
+
+                </ul>
+                <div class="multi-collapse collapse" id="nav-header">
+                    <ul class="nav flex-column ">
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Shopping Cart</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </aside>
+        <main>
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+        </main>
+    </div>
+
+
+
+</body>
+</html>

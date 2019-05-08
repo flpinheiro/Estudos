@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Pagina de Estudo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+header, footer {
+  background-color: grey;
+  color: white;
+  padding: 15px;
+}
+    body {
+        max-width:1200px;
+        margin:auto;
+    }
+
+.column {
+  float: left;
+  padding: 15px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+aside {
+  width: 25%;
+}
+
+main {
+  width: 75%;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #33b5e5;
+  color: #ffffff;
+}
+
+aside li:hover {
+  background-color: #0099cc;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav .active {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Chania</h1>
+</header>
+    <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+<div class="container">
+  <aside class="column">
+    <ul>
+      <li>The Flight</li>
+      <li>The City</li>
+      <li>The Island</li>
+      <li>The Food</li>
+    </ul>
+  </aside>
+
+  <main class="column">
+    <h1>The City</h1>
+    <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+    <p>You will learn more about web layout and responsive web pages in a later chapter.</p>
+  </main>
+</div>
+
+<footer>
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
